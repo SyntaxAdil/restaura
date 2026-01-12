@@ -2,9 +2,10 @@ import {Navbar} from "./components/Navbar"
 import {Hero} from "./components/Hero"
 function App() {
   return (
-    <main>
+    <main className="overflow-x-hidden text-neutral-200 antialiased">
       <Hero />
       <Navbar />
+      
       
     </main>
   )
