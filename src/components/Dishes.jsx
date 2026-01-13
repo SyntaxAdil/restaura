@@ -1,7 +1,7 @@
 import { DISHES } from "../constants/index";
 export const Dishes = () => {
   return (
-    <section className="py-16">
+    <section className="py-16" id="dishes">
       <h1 className="text-4xl sm:text-5xl lg:text-4xl text-center  mb-20">
         Our Dishes
       </h1>

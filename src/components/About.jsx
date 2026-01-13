@@ -2,7 +2,7 @@ import about from "../assets/about.jpeg";
 import {ABOUT} from "../constants/index";
 export const About = () => {
   return (
-    <section>
+    <section id="about" >
       <h1 className="text-4xl sm:text-5xl lg:text-4xl text-center  mb-12">
         About Us
       </h1>

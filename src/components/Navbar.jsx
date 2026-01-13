@@ -10,10 +10,12 @@ export const Navbar = () => {
     setIsMenuBar(!isMenuBar);
   }
   const handleScroll = (event, targetId) => {
-    event.preventDeafault();
+    event.preventDefault();
+
     const targetEl = document.getElementById(targetId);
     if (targetEl) {
       const offsetTop = targetEl.offsetTop - 80;
+
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -22,10 +24,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 ">
+    <nav className="fixed top-4 left-0 right-0 z-50 " >
       <div className="container flex justify-between items-center w-full lg:max-w-200 mx-auto backdrop-blur-lg rounded-lg lg:rounded-full p-4  lg:shadow-2xl ">
         <div className="flex items-center">
-          <a href="index.html">
+          <a href="#">
             <img src={logo} alt="logo " width={80} />
           </a>
         </div>
@@ -34,7 +36,7 @@ export const Navbar = () => {
             return (
               <li key={index}>
                 <a
-                  href={items.targetId}
+                  href={`#${items.targetId}`}
                   className={`text-sm text-neutral-400 transition-colors ${
                     index !== 0 ? "border-l-2 border-neutral-700 pl-2" : ""
                   }  hover:text-neutral-100`}
