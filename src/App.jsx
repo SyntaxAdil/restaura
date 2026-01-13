@@ -6,6 +6,7 @@ import {Mission} from "./components/Mission"
 import {Experties} from "./components/Experties"
 import {Review} from "./components/Review"
 import {Contact} from "./components/Contact"
+import {Footer} from "./components/Footer"
 function App() {
   return (
     <section className="overflow-x-hidden text-neutral-200 antialiased">
@@ -21,6 +22,7 @@ function App() {
 
       </main>
       
+      <Footer />
       
     </section>
   )
