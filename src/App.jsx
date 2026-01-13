@@ -1,13 +1,18 @@
 import {Navbar} from "./components/Navbar"
 import {Hero} from "./components/Hero"
+import {Dishes} from "./components/Dishes"
 function App() {
   return (
-    <main className="overflow-x-hidden text-neutral-200 antialiased">
+    <section className="overflow-x-hidden text-neutral-200 antialiased">
       <Hero />
       <Navbar />
+      <main className="max-w-7xl mx-auto ">
+        <Dishes />
+
+      </main>
       
       
-    </main>
+    </section>
   )
 }
 
