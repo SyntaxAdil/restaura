@@ -58,7 +58,7 @@ export const Navbar = () => {
         </button>
 
         {isMenuBar && (
-          <ul className="fixed top-13 backdrop-blur-lg left-0 bg-neutral-900 h-auto p-4 gap-4 items-start lg:hidden flex flex-col w-full">
+          <ul className="fixed top-16 backdrop-blur-lg left-0 bg-neutral-900 h-auto p-4 gap-4 items-start lg:hidden flex flex-col w-full">
             {LINKS.map((items, index) => {
               return (
                 <li key={index}>

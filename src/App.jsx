@@ -1,3 +1,4 @@
+import Preloader from "./components/Preloader"
 import {Navbar} from "./components/Navbar"
 import {Hero} from "./components/Hero"
 import {Dishes} from "./components/Dishes"
@@ -7,7 +8,16 @@ import {Experties} from "./components/Experties"
 import {Review} from "./components/Review"
 import {Contact} from "./components/Contact"
 import {Footer} from "./components/Footer"
+import {ScrollToTop} from "./components/ScrollToTop"
+import { useEffect, useState } from "react"
 function App() {
+  const [isLoading,setIsloading]= useState(true);
+  useEffect(()=>{
+    setTimeout(() => {
+      setIsloading(false)
+    }, 2000);
+  })
+  if (isLoading) return <Preloader />
   return (
     <section className="overflow-x-hidden text-neutral-200 antialiased">
       <Hero />
@@ -23,6 +33,7 @@ function App() {
       </main>
       
       <Footer />
+      <ScrollToTop />
       
     </section>
   )
