@@ -4,6 +4,7 @@ import {Dishes} from "./components/Dishes"
 import {About} from "./components/About"
 import {Mission} from "./components/Mission"
 import {Experties} from "./components/Experties"
+import {Review} from "./components/Review"
 function App() {
   return (
     <section className="overflow-x-hidden text-neutral-200 antialiased">
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Mission />
         <Experties />
+        <Review />
 
       </main>
       

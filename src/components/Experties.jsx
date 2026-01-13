@@ -1,7 +1,7 @@
 import { CUSINES } from "../constants/index";
 export const Experties = () => {
   return (
-    <section id="experties">
+    <section id="expertise">
       <h1 className="text-4xl sm:text-5xl lg:text-4xl text-center  mb-20">
         Our Experties
       </h1>
